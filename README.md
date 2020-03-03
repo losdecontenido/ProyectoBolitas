@@ -1,5 +1,5 @@
 # ProyectoBolitas
-Proyecto para Combinar herramientas de:
+Proyecto para combinar herramientas de:
 - Realidad Aumentada
 - Multijugador en Línea
 - Procesamiento de Audio
