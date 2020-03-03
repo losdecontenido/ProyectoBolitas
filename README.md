@@ -1,4 +1,6 @@
 # ProyectoBolitas
-## Herramientas de Desarrollo:
-- Unity 19.2.5
-- ARCore 2007.4.34f1
+Proyecto para Combinar herramientas de:
+- Realidad Aumentada
+- Multijugador en Línea
+- Procesamiento de Audio
+- Redes Neuronales
