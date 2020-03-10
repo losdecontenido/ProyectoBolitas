@@ -11,8 +11,6 @@ public class Player : MonoBehaviour
 
     Rigidbody rigidBody;
 
-    Vector3 movement;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -23,8 +21,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        movement.x = gameObject.transform.position.x + movementJoystick.Horizontal;
-        movement.z = gameObject.transform.position.z + movementJoystick.Vertical;
-        rigidBody.AddForce(movement * playerSpeed);
+        float horizontalMovement = movementJoystick.Horizontal * playerSpeed;
+        float verticalMovement = movementJoystick.Vertical * playerSpeed;
     }
 }
