@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/GoogleARCore/Examples/AugmentedImage/Scenes/AugmentedImage.unity
-    guid: be567d47d3ab94b3badc5b211f535a24
+    path: Assets/Scenes/MovimientoBasico.unity
+    guid: b815a59fc2bdfdd47af8e74db0b21c0b
   m_configObjects: {}
