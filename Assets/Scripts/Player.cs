@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
 
     Rigidbody rigidBody;
 
+    Vector3 movement;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,5 +25,14 @@ public class Player : MonoBehaviour
     {
         float horizontalMovement = movementJoystick.Horizontal * playerSpeed;
         float verticalMovement = movementJoystick.Vertical * playerSpeed;
+
+        Movimiento(horizontalMovement, verticalMovement);
+    }
+
+    void Movimiento(float hMove, float vMove)
+    {
+        movement.Set(hMove, 0, vMove);
+        movement = movement.normalized * playerSpeed * Time.deltaTime;
+        rigidBody.MovePosition(transform.position + movement);
     }
 }
