@@ -5,7 +5,7 @@ Proyecto para combinar herramientas de:
 - Procesamiento de Audio
 - Redes Neuronales
 
-
+# Instrucciones
 - Al abrir la app te pedirá ingresar un NickName.
 - Una vez registrado, la app pedirá al usuario escanear la imagen solicitada.
 - Al detectar la imagen, se mostrará en pantalla un menú, el cual consta de 3 botones.
