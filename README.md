@@ -10,7 +10,7 @@ Proyecto para combinar herramientas de:
 2. Una vez registrado, la app pedirá al usuario escanear la imagen solicitada.
 3. Al detectar la imagen, se mostrará en pantalla un menú, el cual consta de 3 botones.
 4. Los 3 botones serán "Crear Partida", "Unirse a una Partida" y "Salir".
-5. CREAR PARTIDA	
+5. CREAR PARTIDA
 	5.1 Al crear una partida se creará una sala donde el creador será el dueño de la sala, quien puede decidir cuando inciar la partida. 
 	5.2 El dueño de la sala puede decidir si espera a que se unan más jugadores a su sala (20 jugadores máximo) o si decide rellenar los espacios con bots. 
 	5.3 La sala de espera tendrá 2 botones, "Cancelar" e "Iniciar". 
