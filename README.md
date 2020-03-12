@@ -6,7 +6,7 @@ Proyecto para combinar herramientas de:
 - Redes Neuronales
 
 # Instrucciones
-- Al abrir la app te pedirá ingresar un NickName.
+- Al abrir la app pedirá al usuario ingresar un NickName.
 - Una vez registrado, la app pedirá al usuario escanear la imagen solicitada.
 - Al detectar la imagen, se mostrará en pantalla un menú, el cual consta de 3 botones.
 - Los 3 botones serán "Crear Partida", "Unirse a una Partida" y "Salir".
