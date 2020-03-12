@@ -11,9 +11,9 @@ Proyecto para combinar herramientas de:
 3. Al detectar la imagen, se mostrará en pantalla un menú, el cual consta de 3 botones.
 4. Los 3 botones serán "Crear Partida", "Unirse a una Partida" y "Salir".
 5. CREAR PARTIDA
-	5.1 Al crear una partida se creará una sala donde el creador será el dueño de la sala, quien puede decidir cuando inciar la partida. 
-	5.2 El dueño de la sala puede decidir si espera a que se unan más jugadores a su sala (20 jugadores máximo) o si decide rellenar los espacios con bots. 
-	5.3 La sala de espera tendrá 2 botones, "Cancelar" e "Iniciar". 
+5.1 Al crear una partida se creará una sala donde el creador será el dueño de la sala, quien puede decidir cuando inciar la partida.
+5.2 El dueño de la sala puede decidir si espera a que se unan más jugadores a su sala (20 jugadores máximo) o si decide rellenar los espacios con bots.
+5.3 La sala de espera tendrá 2 botones, "Cancelar" e "Iniciar". 
 6. UNIRSE A PARTIDA
 	6.1 Al dar clic al botón "Unirse a Partida" se mostrará una lista de las salas creadas, en cualquier momento el jugador podrá salir al menú con un boton de "Regresar".
 	6.2 Al seleccionar una sala el jugador se unirá a la partida donde se mostrará la sala de espera donde se encuentran los jugadores actuales. De igual manera el usuario podrá decidir
