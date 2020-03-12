@@ -18,7 +18,7 @@ Proyecto para combinar herramientas de:
 	- Al dar clic al botón "Unirse a Partida" se mostrará una lista de las salas creadas, en cualquier momento el jugador podrá salir al menú con un boton de "Regresar".
 	- Al seleccionar una sala el jugador se unirá a la partida donde se mostrará la sala de espera donde se encuentran los jugadores actuales. De igual manera el usuario podrá decidir
 	    si desea regresar al menú con un boton de "Salir".
-- SELECCIONAR PIEL TIO :o
+- SELECCIONAR SKIN
 	- En la sala de espera, tanto el creador de la sala como los invitados podrán cambiar el aspecto de su personaje haciendo clic en la imagen de su avatar.
 	- El aspecto que aparecerá en la partida será la selección actual de la imagen del avatar.
 - EN PARTIDA
