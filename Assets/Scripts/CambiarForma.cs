@@ -1,15 +1,18 @@
 ﻿[UnityEngine.DisallowMultipleComponent]
 [UnityEngine.RequireComponent(typeof(UnityEngine.Rigidbody))]
-[UnityEngine.RequireComponent(typeof(UnityEngine.MeshRenderer))]
+[UnityEngine.RequireComponent(typeof(UnityEngine.MeshFilter))]
+[UnityEngine.RequireComponent(typeof(UnityEngine.MeshCollider))]
 public class CambiarForma : UnityEngine.MonoBehaviour
 {
     //--|||--|||--
     #region Propiedades Clase
-    [UnityEngine.SerializeField] private UnityEngine.PhysicMaterial [] materialCorrespondienteForma;
+    [UnityEngine.SerializeField] private UnityEngine.PhysicMaterial[] materialCorrespondienteForma;
+    [UnityEngine.SerializeField] private UnityEngine.Mesh[] mesh;
     #endregion
     //--|||--|||--
     #region Propiedades Logica
-
+    private UnityEngine.MeshFilter cuerpoVisible;
+    private UnityEngine.MeshCollider cuerpoTangible;
     #endregion
     //--|||--|||--
     #region Propiedades Constantes
@@ -25,12 +28,27 @@ public class CambiarForma : UnityEngine.MonoBehaviour
     #region Metodos MonoBehaviour
     private void Awake()
     {
+        cuerpoVisible = GetComponent<UnityEngine.MeshFilter>();
+        cuerpoTangible = GetComponent<UnityEngine.MeshCollider>();
     }
     private void OnEnable()
     {
     }
     private void Start()
     {
+        byte seleccion = (byte)UnityEngine.Random.Range(0, 2);
+        print(seleccion);
+        switch (seleccion)
+        {
+            case 0:
+                CambiarPiramide();
+                break;
+            case 1:
+                CambiarEsfera();
+                break;
+            default:
+                break;
+        }
     }
     private void Update()
     {
@@ -52,8 +70,22 @@ public class CambiarForma : UnityEngine.MonoBehaviour
 
     //--|||--|||--
     #region Metodos Clase
-    private void Metodo()
+    private void CambiarPiramide()
     {
+        cuerpoVisible.mesh = mesh[0];
+        cuerpoTangible.material = materialCorrespondienteForma[0];
+        cuerpoTangible.sharedMesh = mesh[0];
+    }
+    private void CambiarRectangulo()
+    {
+        cuerpoVisible.mesh = mesh[2];
+        cuerpoTangible.material = materialCorrespondienteForma[2];
+    }
+    private void CambiarEsfera()
+    {
+        cuerpoVisible.mesh = mesh[1];
+        cuerpoTangible.material = materialCorrespondienteForma[1];
+        cuerpoTangible.sharedMesh = mesh[1];
     }
     #endregion
 }
